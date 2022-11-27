@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+// 전체 페이지 공통
+.wrapper {
+  
+  .title-h1 {}
+
+  .title-h2 {
+    font-size: 52px;
+    font-weight: 700;
+  }
+
+  .title-h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  .title-h4 {}
+
+  .title-h5 {}
+
+  .title-h6 {}
+}
+
+// 헤더
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+
+  .logo {
+    a {
+      position: relative;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+  }
+}
+
+// nav-gnb
+.gnb-list {
+  display: flex;
+
+  >li {
+
+    >a {
+      position: relative;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        border: 2px solid #000;
+        box-sizing: border-box;
+      }
+
+      &:hover::after {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+.lnb-list {
+  
+  >li {
+
+    >a {
+      font-size: 18px;
+    }
+  }
+}
+
+// 컨테이너
+.main {
+
+  .inner {
+    width: 1200px;
+    padding: 80px 16px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+
+// 비주얼
+.visual {
+  min-height: 100%;
+  // background-color: rgb(102 103 171);
+  background-color: rgb(0 0 0);
+
+  .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+  }
+
+  .area-text {
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    .title-h2,
+    .desc {
+      color: #fff;
+    }
+
+    .desc {
+      font-size: 24px;
+    }
+  }
+}
+
+// 포트폴리오
+.wrap-work {
+
+  .list {
+    display: flex;
+
+    li {
+      position: relative;
+      width: calc( 100% / 2 );
+      overflow: hidden;
+      
+      .new-city,
+      .line-careers {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 584px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        &:hover .work-desc {
+          top: 0;
+          opacity: 1;
+          visibility: visible;
+          height: 100%;
+        }
+      }
+
+      .new-city {
+        background-image: url(../image/3_new_city.jpg);
+        
+      }
+
+      .line-careers {
+        background-image: url(../image/line_careers.jpg);
+      }
+
+      .work-desc {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        left: 0;
+        height: 0;
+        padding: 32px;
+        box-sizing: border-box;
+        background-color: rgba($color: #000, $alpha: 0.7);
+        transition: all 0.7s ease;
+        color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+
+        strong {
+          display: block;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+}
+
+// 스킬
+.wrap-skill {
+
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin: 0 0 20px 0;
+
+      a {
+        padding: 32px;
+        color: #fff;
+        background-color: #000;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+// 더 보기 버튼
+.btn-view {
+  text-align: center;
+  margin: 40px 0 0 0;
+
+  .btn {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 0 40px;
+    height: 40px;
+  }
+}
+
+// 푸터
+.footer {
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #000;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+
+    .address {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+
+// 반응형 웹
+@media screen and (max-width: 1280px) and (min-width: 1081px) {
+  // Portfolio 콘텐츠
+  .main .inner {
+    width: 100%;
+
+    .wrap-work .list li {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 0px) {
+  body {
+    min-width: 320px;
+  }
+
+  // Portfolio 콘텐츠
+  .main .inner {
+    width: 100%;
+    padding: 60px 12px;
+    
+    .wrap-work .list li {
+      width: 100%;
+    }
+  }
+
+  .visual .inner {
+    min-height: auto;
+    padding: 40px 8px;
+  }
+
+  .visual .desc {
+    font-size: 16px;
+  }
+
+  .wrap-work .list li .new-city,
+  .wrap-work .list li .line-careers {
+    height: auto;
+    padding-top: 100%;
+  }
+
+  .wrapper .title-h2 {
+    font-size: 24px;
+  }
+
+  // 포트폴리오
+  .wrap-work {
+    .list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
