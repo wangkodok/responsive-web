@@ -274,7 +274,7 @@
   
     .area-text {
       // top: 120px;
-      // left: 120px;
+      left: 16px;
   
       .desc {
         font-size: 56px;
@@ -319,7 +319,7 @@
     }
   
     .area-text {
-      left: 0;
+      left: 16px;
   
       .title-h2,
       .desc {
@@ -395,7 +395,7 @@
     .area-text {
       position: absolute;
       top: 50%;
-      left: 12px;
+      left: 16px;
       transform: translate(0, -50%);
       letter-spacing: -1.5px;
   

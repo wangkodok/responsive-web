@@ -26,3 +26,40 @@ html::-webkit-scrollbar-thumb:horizontal {
   background-clip: padding-box;
   border: 4px solid transparent;
 }
+
+a, button, body {
+  /* cursor: none; */
+}
+
+a:hover {
+  /* cursor: none; */
+  /* background-color: blue; */
+}
+
+.cursor {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: #ffff00;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.start {
+  font-size: 50px;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+.end {
+  font-size: 50px;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
