@@ -1,16 +1,20 @@
-window.onload = (e) => {
-  const html = document.querySelector('html');
-  const cursor = document.querySelector('.cursor');
-  console.log(e)
-
-  html.addEventListener('mouseenter', (e) => {
-    cursor.style.top = `${e.offsetY}px`;
-    cursor.style.left = `${e.offsetX}px`;
-    console.log(e.offsetY);
-  })
-}
-
 window.addEventListener('DOMContentLoaded', () => {
+  function scrollAppear() {
+    const section = document.querySelectorAll('.section');
+    const screenPosition = window.innerHeight;
+  
+    for (let i = 0; i < section.length; i++) {
+      const textPosition = section[i].getBoundingClientRect().top;
+  
+      if (textPosition < screenPosition) {
+        section[i].classList.add('animation');
+      } else {
+        section[i].classList.remove('animation');
+      }
+    }
+  }
+  
+  window.addEventListener('scroll', scrollAppear);
 
   const cursor = document.querySelector(".cursor");
   function mouseMove(e) {

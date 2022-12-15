@@ -14,6 +14,14 @@
     font-size: 156px;
     font-weight: 700;
     margin: 0 0 40px 0;
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 1.5s ease;
+  }
+
+  .animation .title-h3 {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 
   .title-h4 {}
@@ -130,6 +138,16 @@
   }
 }
 
+.section.animation {
+  .wrap-work {
+    .list {
+      li {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+  }
+}
 // 포트폴리오
 .wrap-work {
 
@@ -141,6 +159,16 @@
       margin: 20px;
       width: calc( 100% / 2 );
       overflow: hidden;
+      opacity: 0;
+      transform: translate(0, 100px);
+      
+      &:nth-child(1) {
+        transition: all 1.5s ease 0.5s;
+      }
+
+      &:nth-child(2) {
+        transition: all 1.5s ease 1s;
+      }
       
       .new-city,
       .line-careers {
