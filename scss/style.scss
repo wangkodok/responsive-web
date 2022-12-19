@@ -223,6 +223,17 @@
   }
 }
 
+.section.animation {
+  .wrap-skill {
+    .list {
+      li {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+  }
+}
+
 // 스킬
 .wrap-skill {
 
@@ -232,6 +243,20 @@
 
     li {
       margin: 0 0 20px 0;
+      opacity: 0;
+      transform: translate(0, 100px);
+
+      &:nth-child(1) {
+        transition: all 1.5s ease 0.3s;
+      }
+
+      &:nth-child(2) {
+        transition: all 1.5s ease 0.6s;
+      }
+
+      &:nth-child(3) {
+        transition: all 1.5s ease 0.9s;
+      }
 
       a {
         padding: 32px;
