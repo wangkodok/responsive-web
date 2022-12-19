@@ -115,6 +115,7 @@
   height: 100vh;
   // background-color: rgb(102 103 171);
   background-color: rgb(0 0 0);
+  overflow: hidden;
 
   .inner {
     height: 100%;
@@ -124,6 +125,7 @@
     position: absolute;
     top: 50%;
     left: 160px;
+    z-index: 1;
     transform: translate(0, -50%);
     letter-spacing: -1.5px;
 
@@ -134,6 +136,36 @@
 
     .desc {
       font-size: 72px;
+    }
+  }
+
+  .bg-title {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 0;
+    transform: translate(0, -50%);
+    // width: 100%;
+    height: auto;
+    color: #000;
+    background-repeat: repeat;
+    font-size: 320px;
+    will-change: transform;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+    // -webkit-text-stroke: 1px #000;
+
+    .desc {
+      animation: animate 60s linear infinite;
+      // animation-delay: -60s;
+      white-space: nowrap;
+      @keyframes animate {
+        0% {
+          transform: translate(100%);
+        }
+        100% {
+          transform: translate(-100%);
+        }
+      }
     }
   }
 }
@@ -340,6 +372,10 @@
       width: 580px;
       height: 60px;
     }
+
+    .bg-title {
+      display: none;
+    }
   }
 
   .wrap-work .list li .new-city, 
@@ -393,6 +429,10 @@
       bottom: 120px;
       width: 480px;
       height: 52px;
+    }
+
+    .bg-title {
+      display: none;
     }
   }
 
@@ -472,6 +512,10 @@
       width: 480px;
       height: 52px;
     }
+
+    .bg-title {
+      display: none;
+    }
   }
 }
 
@@ -541,6 +585,10 @@
       .desc {
         font-size: 16px;
       }
+    }
+
+    .bg-title {
+      display: none;
     }
   }
 
