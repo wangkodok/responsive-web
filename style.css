@@ -66,9 +66,19 @@ body {
 }
 
 .sec-work .list-work a {
+  position: relative;
   padding: 64px 0;
   margin: 0 64px;
-  border-bottom: 1px solid #fff;
+}
+
+.sec-work .list-work a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #fff;
 }
 
 .sec-work .list-work .title {
