@@ -17,6 +17,7 @@ body {
   z-index: 20000;
   opacity: 0;
   /* transition: 0.1s; */
+  mix-blend-mode: difference;
 }
 
 /* 마우스 커서 따라오는 요소 */
@@ -33,6 +34,7 @@ body {
   z-index: 10000;
   opacity: 0;
   transition: 0.1s;
+  mix-blend-mode: difference;
 }
 
 .container .content {
