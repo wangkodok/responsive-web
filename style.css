@@ -56,9 +56,17 @@ body {
   top: 0;
 }
 
-.sec-work .work-img img {
+/* .sec-work .work-img img {
   width: 100%;
   height: 100vh;
+} */
+
+.sec-work .work-img .desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
 }
 
 .sec-work .list-work {
