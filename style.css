@@ -77,6 +77,13 @@ body {
   position: relative;
   padding: 64px 0;
   margin: 0 64px;
+  transition: padding 0.5s ease;
+}
+
+.sec-work .list-work a:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 64px 0 64px 64px;
 }
 
 .sec-work .list-work a::after {
