@@ -6,8 +6,8 @@ body {
 /* 마우스 커서 */
 .cursor {
   position: fixed;
-  width: 0;
-  height: 0;
+  width: 10px;
+  height: 10px;
   background-color: #ffffff;
   border-radius: 50%;
   top: 0;
@@ -20,11 +20,17 @@ body {
   mix-blend-mode: difference;
 }
 
+.cursor-size {
+  width: 100px;
+  height: 100px;
+  transition: 0.1s;
+}
+
 /* 마우스 커서 따라오는 요소 */
 .cursor-tail {
   position: fixed;
-  width: 0;
-  height: 0;
+  width: 30px;
+  height: 30px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   top: 0;
