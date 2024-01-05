@@ -7,25 +7,25 @@ body {
 }
 
 .header .inner {
-  padding: 32px 32px 0;
+  padding: 2rem 2rem 0;
 }
 
 .header .logo {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 /* 비주얼 */
 .sec-visual .visual-title {
-  font-size: 90px;
+  font-size: 5.625rem;
 }
 
 .sec-visual .visual-img {
-  margin: 64px 0 0 0;
+  margin: 4rem 0 0 0;
 }
 
 .sec-visual .visual-img img {
   width: 100%;
-  border-radius: 100px;
+  border-radius: 6.25rem;
 }
 
 /* 히스토리 */
@@ -35,12 +35,12 @@ body {
 
 .history .list-history {
   display: flex;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .history .list-history li {
-  font-size: 90px;
-  margin: 0 64px 0 0;
+  font-size: 5.625rem;
+  margin: 0 4rem 0 0;
 }
 
 /* 포트폴리오 */
@@ -66,7 +66,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .sec-work .list-work {
@@ -75,15 +75,15 @@ body {
 
 .sec-work .list-work a {
   position: relative;
-  padding: 64px 0;
-  margin: 0 64px;
+  padding: 4rem 0;
+  margin: 0 4rem;
   transition: padding 0.5s ease;
 }
 
 .sec-work .list-work a:hover {
   background-color: #fff;
   color: #000;
-  padding: 64px 0 64px 64px;
+  padding: 4rem 0 4rem 4rem;
 }
 
 .sec-work .list-work a::after {
@@ -92,49 +92,49 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #fff;
 }
 
 .sec-work .list-work .title {
-  font-size: 20px;
-  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
 }
 
 .sec-work .list-work .desc {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /* 스킬 */
 .sec-skill .list-skill li {
   background-color: #fff;
-  border-radius: 16px;
-  margin: 0 0 32px 0;
+  border-radius: 1rem;
+  margin: 0 0 2rem 0;
 }
 
 .sec-skill .list-skill p {
-  font-size: 32px;
-  padding: 32px;
+  font-size: 2rem;
+  padding: 2rem;
   color: #000;
 }
 
 /* 회고록 */
 .sec-memoir .list-memoir li {
-  border-radius: 16px;
+  border-radius: 1rem;
   background-color: #fff;
-  margin: 0 0 32px 0;
+  margin: 0 0 2rem 0;
 }
 
 .sec-memoir .list-memoir a {
-  padding: 32px;
+  padding: 2rem;
 }
 
 .sec-memoir .list-memoir h4 {
-  font-size: 32px;
+  font-size: 2rem;
   color: #000;
 }
 
 /* 푸터 */
 .footer {
-  padding: 32px;
+  padding: 2rem;
 }

@@ -50,6 +50,7 @@ a:hover {
 }
 
 /* 폰트 초기화 */
+html,
 body,
 input,
 textarea,
@@ -59,7 +60,7 @@ table {
   font-family: "Noto Sans KR", "Nanum Gothic", "Apple SD Gothic Neo",
     "Malgun Gothic", "맑은 고딕", "dotum", "돋움", sans-serif;
   /* color: #000; */
-  /* font-size: 16px; */
+  font-size: 16px;
   /* line-height: 1.5; */
 }
 
