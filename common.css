@@ -5,6 +5,12 @@ body {
   cursor: none;
 }
 
+/* 마우스 커서 none */
+a,
+button {
+  cursor: none;
+}
+
 /* 마우스 커서 */
 .cursor {
   position: fixed;
