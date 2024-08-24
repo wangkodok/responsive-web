@@ -67,7 +67,8 @@ button {
 
 /* 콘텐츠 여백 */
 .sec-skill .wrap-skill,
-.sec-memoir .wrap-memoir {
+.sec-memoir .wrap-memoir,
+.sec-horizontal .wrap-horizontal {
   padding: 2rem 2rem 0;
 }
 
