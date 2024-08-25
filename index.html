@@ -13,6 +13,7 @@
   <body>
     <div class="cursor"></div>
     <div class="cursor-tail"></div>
+    <div class="count"></div>
     <div class="wrapper">
       <!-- 헤더 -->
       <header class="header">
@@ -245,6 +246,19 @@
               </div>
             </div>
           </section>
+          <script>
+            // 스크롤 시 진행률 표시
+            const html = document.querySelector("html");
+            const count = document.querySelector(".count");
+            window.addEventListener("scroll", () => {
+              const current =
+                html.scrollTop / (html.offsetHeight - html.clientHeight);
+              console.log();
+              const line = html.offsetWidth * current;
+              const decimalPoint = Math.floor(line);
+              count.style.width = decimalPoint + "px";
+            });
+          </script>
         </div>
       </main>
 
