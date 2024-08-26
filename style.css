@@ -19,8 +19,64 @@ body {
   font-size: 5.625rem;
 }
 
+.sec-visual .visual-title .publisher {
+  font-size: 5.625rem;
+  animation: visual-title 1s linear forwards;
+  animation-delay: 0.5s;
+  transform: translate(100px, 0);
+  opacity: 0;
+}
+
+@keyframes visual-title {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+.sec-visual .visual-title .front-end {
+  font-size: 5.625rem;
+  animation: front-end 1s linear forwards;
+  animation-delay: 0.5s;
+  transform: translate(-100px, 0);
+  opacity: 0;
+}
+
+@keyframes front-end {
+  0% {
+    transform: translate(-100px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
 .sec-visual .visual-img {
   margin: 4rem 0 0 0;
+  animation: visual-img 1s linear forwards;
+  animation-delay: 0.5s;
+  transform: translate(0, 100px);
+  opacity: 0;
+}
+
+@keyframes visual-img {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
 
 .sec-visual .visual-img img {
