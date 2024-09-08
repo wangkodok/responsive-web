@@ -51,6 +51,21 @@ button {
   mix-blend-mode: difference;
 }
 
+.cursor-change-mouse-cursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-image: url("./visual.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+  border: none;
+  transition: 0.05s;
+}
+
 /* 스크롤 시 진행률 표시 */
 .count {
   position: fixed;
@@ -80,7 +95,8 @@ button {
 /* 콘텐츠 여백 */
 .sec-skill .wrap-skill,
 .sec-memoir .wrap-memoir,
-.sec-horizontal .wrap-horizontal {
+.sec-horizontal .wrap-horizontal,
+.sec-change-mouse-cursor .wrap-change-mouse-cursor {
   padding: 2rem 2rem 0;
 }
 

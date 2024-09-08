@@ -223,6 +223,64 @@ body {
   color: #000;
 }
 
+/* 세로 스크롤 sticky */
+.sec-vertical {
+  position: relative;
+}
+
+.sec-vertical .vertical-item {
+  position: sticky;
+  top: 0;
+  /* height: 100vh; */
+  background-color: #fff;
+  color: #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.sec-vertical .common-inner {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sec-vertical .layout {
+  display: flex;
+}
+
+.sec-vertical .vertical-item .title {
+  font-size: 64px;
+}
+
+.sec-vertical .vertical-item .desc {
+  font-size: 14px;
+  margin: 0 0 24px 0;
+}
+
+.sec-vertical .vertical-item img {
+  width: 100%;
+  display: block;
+}
+
+.sec-change-mouse-cursor .list-change-mouse-cursor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+}
+
+.sec-change-mouse-cursor .list-change-mouse-cursor .item-change-mouse-cursor {
+  width: calc((100% / 3) - 40px);
+  padding: 0.625rem;
+  margin: 0.625rem;
+}
+
+.sec-change-mouse-cursor .list-change-mouse-cursor .title {
+  font-size: 2rem;
+}
+
+.sec-change-mouse-cursor img {
+  width: 100%;
+}
+
 /* 푸터 */
 .footer {
   padding: 2rem;
