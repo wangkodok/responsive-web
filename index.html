@@ -445,5 +445,22 @@
     </div>
     <script src="./script.js"></script>
     <script src="./horizontal.js"></script>
+    <script>
+      // a 태그 새로 고침 막기
+      function stopRefreshing() {
+        const aTag = document.querySelectorAll('a');
+        
+        for (let i = 0; i < aTag.length; i++) {
+          aTag[i].addEventListener('click', (event) => {
+            let href = aTag[i].getAttribute("href");
+            if (href === '#' || href === '') {
+              event.preventDefault();
+            };
+          });
+        };
+      };
+
+      stopRefreshing();
+    </script>
   </body>
 </html>
