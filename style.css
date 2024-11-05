@@ -21,11 +21,13 @@ body {
 
 @keyframes home-screen {
   0% {
-    left: 0;
+    /* left: 0; */
+    opacity: 1;
   }
 
   100% {
-    left: -100%;
+    /* left: -100%; */
+    opacity: 0;
   }
 }
 
@@ -199,12 +201,32 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   margin: 0 0 2rem 0;
+  transition: all 0.5s ease;
+}
+
+.sec-skill .list-skill li:hover {
+  background-color: #000;
+}
+
+.sec-skill .list-skill li:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: .0625rem solid #fff;
+  border-radius: 1rem;
 }
 
 .sec-skill .list-skill p {
   font-size: 2rem;
   padding: 2rem;
   color: #000;
+}
+
+.sec-skill .list-skill li:hover p {
+  color: #fff;
 }
 
 /* 회고록 */

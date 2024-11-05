@@ -110,3 +110,15 @@ button {
 .sec-memoir .list-memoir .desc {
   font-family: "Pretendard-Regular";
 }
+
+/* 스크롤 애니메이션 */
+.container .sec-skill li {
+  opacity: 0;
+  transform: translate(0, 200px);
+  transition: all 1.5s ease;
+}
+
+.container .sec-skill .scroll-js {
+  opacity: 1;
+  transform: translate(0, 0);
+}

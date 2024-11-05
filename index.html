@@ -446,6 +446,35 @@
     <script src="./script.js"></script>
     <script src="./horizontal.js"></script>
     <script>
+      // 스크롤 인터랙션
+      function scrollInteraction() {
+        const obj = {
+          selectorAll: '.sec-skill .list-skill li', // html 요소 선택
+          className: 'scroll-js', // 스크롤 시 클래스명 추가
+          screenPosition: 1.2, // 요소 위치(기본값 1, 최댓값 2)
+        };
+
+        const sectionWpap = document.querySelectorAll(obj.selectorAll);
+        if (obj.screenPosition < 1 || obj.screenPosition > 2) return;
+        const screenPosition = window.innerHeight / obj.screenPosition;
+        console.log(screenPosition, 'screenPosition')
+
+        for (let i = 0; i < sectionWpap.length; i++) {
+          const sectionPosition = sectionWpap[i].getBoundingClientRect().top;
+          if (sectionPosition < screenPosition) {
+            sectionWpap[i].classList.add(obj.className);
+          } else {
+            sectionWpap[i].classList.remove(obj.className);
+          };
+        };
+      };
+
+      // 스크롤 실행
+      window.addEventListener('scroll', () => {
+        scrollInteraction();
+      });
+    </script>
+    <script>
       // a 태그 새로 고침 막기
       function stopRefreshing() {
         const aTag = document.querySelectorAll('a');
